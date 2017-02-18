@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'mongoid', '~> 5.1'
+gem 'faker', '~> 1.6'
 
 group :development, :test do
   gem 'byebug'
