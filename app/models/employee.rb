@@ -14,6 +14,9 @@ class Employee
   as_enum :gender, [:female, :male], prefix: true, map: :string
 
   index({first_name: 1, last_name: 1},{name: 'first name and last name index'})
+  index({experience: 1})
+  #rake db:mongoid:create_indexes
+  #rake db:mongoid:remove_indexes
 
   search_in :first_name, :last_name, :place_of_birth
 

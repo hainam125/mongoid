@@ -17,6 +17,8 @@ gem 'simple_enum', '~> 2.0.0' , require: 'simple_enum/mongoid'
 gem 'faker', '~> 1.6'
 gem 'axlsx', '~> 2.0'
 
+gem 'awesome_print'
+
 group :development, :test do
   gem 'byebug'
 end
@@ -24,6 +26,9 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+  # better error output
+  #gem "better_errors"
+  #gem "binding_of_caller"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
