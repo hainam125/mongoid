@@ -11,7 +11,11 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'mongoid', '~> 5.1'
+gem 'mongoid_search', '~> 0.3.2'
+gem 'mongoid-paperclip', '~> 0.0.11'
+gem 'simple_enum', '~> 2.0.0' , require: 'simple_enum/mongoid'
 gem 'faker', '~> 1.6'
+gem 'axlsx', '~> 2.0'
 
 group :development, :test do
   gem 'byebug'
