@@ -93,8 +93,43 @@ class Employee
           "from"          => "computers",
           "localField"    => "_id",
           "foreignField"  => "employee_id",
-          "as"            => "computers"
+          "as"            => "computer"
         }
+      },
+      {
+        "$unwind" => "$computer"
+      },
+      {
+        "$addFields" => {
+          "computer_id" => "$computer._id"
+        }
+      }
+    ])
+  end
+
+  def self.test7
+    collection.aggregate([
+      {
+        "$lookup" => {
+          "from"          => "computers",
+          "localField"    => "_id",
+          "foreignField"  => "employee_id",
+          "as"            => "computer"
+        }
+      },
+      {
+        "$unwind" => "$computer"
+      },
+      {
+        "$lookup" => {
+          "from"          => "equipment",
+          "localField"    => "computer._id",
+          "foreignField"  => "computer_id",
+          "as"            => "equipment"
+        }
+      },
+      {
+        "$unwind" => "$equipment"
       }
     ])
   end

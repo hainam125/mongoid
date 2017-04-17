@@ -6,4 +6,5 @@ class Computer
   field :author
 
   belongs_to :employee
+  has_many :equipments
 end
