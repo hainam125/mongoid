@@ -20,7 +20,7 @@ class Employee
 
   search_in :first_name, :last_name, :place_of_birth
 
-  has_many :computer
+  has_many :computers
 
   
   # aggregate
@@ -84,6 +84,19 @@ class Employee
         }
       }
     ]).first
+  end
+
+  def self.test6
+    collection.aggregate([
+      {
+        "$lookup" => {
+          "from"          => "computers",
+          "localField"    => "_id",
+          "foreignField"  => "employee_id",
+          "as"            => "computers"
+        }
+      }
+    ])
   end
 
   # logical $cmp: [expr1, expr2], strcasecmp, and/or/not
