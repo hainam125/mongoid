@@ -1,0 +1,14 @@
+en:
+  hello: "Xin chào"
+  goodbye: "Tạm biệt"
+  time:
+    - Ngày
+    - Tháng
+    - Năm
+  Year:
+    Month:
+      Date:
+        Hour: "Một"
+        Minue:
+          Second: "Giây"
+          Milisecond: "Nghìn"

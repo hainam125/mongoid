@@ -18,6 +18,7 @@ gem 'faker', '~> 1.6'
 gem 'axlsx', '~> 2.0'
 
 gem 'awesome_print'
+gem 'httparty', '~> 0.13.7'
 
 group :development, :test do
   gem 'byebug'

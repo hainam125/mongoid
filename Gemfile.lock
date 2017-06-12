@@ -67,6 +67,9 @@ GEM
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     htmlentities (4.3.4)
+    httparty (0.13.7)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.8.0)
     jbuilder (2.6.1)
       activesupport (>= 3.0.0, < 5.1)
@@ -100,6 +103,7 @@ GEM
       fast-stemmer (~> 1.0.0)
       mongoid (>= 3.0.0)
     multi_json (1.12.1)
+    multi_xml (0.6.0)
     nokogiri (1.7.0.1-x86-mingw32)
       mini_portile2 (~> 2.1.0)
     origin (2.3.0)
@@ -185,6 +189,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   faker (~> 1.6)
+  httparty (~> 0.13.7)
   jbuilder (~> 2.0)
   jquery-rails
   mongoid (~> 5.1)
